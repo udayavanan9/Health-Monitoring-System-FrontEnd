@@ -1,0 +1,288 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Cinzel', serif;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+  min-width: 100vw;
+  min-height: 100vh;
+}
+nav{
+  position: fixed;
+  z-index: 1;
+  margin-left: 180px;
+}
+.nav{
+  padding: 20px 0;
+  display:flex ;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.logo-text{
+  color:#e63946;
+}
+.logo-text i{
+  color: rgb(255, 200, 200) ;
+}
+.nav-bars{
+  margin-left: 200px;
+}
+a{
+   color:  rgb(255, 200, 200);
+}
+.ul{
+  display: flex;
+}
+.ul li{
+  padding: 7px 10px;
+  margin-left: 70px;
+  border:0.2px solid rgb(255, 200, 200);
+  border-radius: 19px;
+  position: relative;
+  transition: all 0.9s ease-in-out;
+  overflow: hidden;
+  
+}
+.ul li .one{
+  position: absolute;
+  background: rgb(255, 200, 200);
+  z-index: -1;
+  width: 0;
+  height: 100%;
+  left: -0px;
+  bottom: 0;
+  transition: 0.7s;
+}
+.ul li .two{
+  position: absolute;
+  background: rgb(255, 200, 200);
+  z-index: -1;
+  width: 0;
+  height: 100%;
+  right: -0px;
+  bottom: 0;
+  transition: 0.7s;
+}
+ .ul li:hover .one{
+  width: 100%;
+ }
+ .ul li:hover .two{
+  width: 100%;
+ }
+
+
+.ul li i{
+  color: #e63946;
+}
+.ul li{
+  color: rgb(202, 0, 0);
+}
+a{
+    color: rgb(77, 77, 77);
+  }
+.click a{
+    font-size: 1.2rem;
+    color:rgb(255, 249, 249) ;
+    background: #e63946;
+    padding: 10px 15px;
+    border: none;
+    transition:all 0.5s ease-out ;
+    border-radius: 2px;
+  }
+  .click {
+    margin-top: 20px;
+  }
+  .click a:hover{
+    background: rgb(255, 200, 200) ;
+    color: #e63946;
+  }
+  .live-container{
+    display: flex;
+    justify-content: center;
+  }
+  .live-count{
+    position: relative;
+    top: 100px;
+    width: 1200px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border:0.1px solid #e63946;
+    border-radius: 20px;
+  }
+  .patient-title{
+    margin-top: 130px;  
+    margin-bottom: 30px;
+    margin-left:160px;
+  }
+  .women{
+    text-align: center;
+    color: #e63946;
+  }
+  .women p{
+    color: gray;
+    font-size: 0.9rem;
+  }
+  .form-container{
+    display: grid;
+    place-items:start;
+    margin-left: 58px;
+    
+  }
+  .form-types{
+    display: flex;
+    justify-content: space-around;
+  
+  }
+  .form1{
+    margin: 0 100px;
+    display: flex;
+   align-items: center;
+    gap: 20px;
+    flex-direction: column;
+   
+  }
+  input{
+    width: 260px;
+    height: 40px;
+    outline: none;
+    border: 0.2px solid rgb(255, 200, 200) ;
+    letter-spacing: 2px;
+    padding-left: 40px;
+
+  }
+  input:focus{
+    color: #292929;
+    font-size: 12px;  
+    padding-left: 40px;
+  
+  }
+  .icon input{
+    position: relative;
+  }
+  .form1 i{
+    color: #e63946;
+  }
+  .icon1 i{
+    position: absolute;
+    top: 430px;
+    left: 175px;
+  }
+  .icon2 i{
+    position: absolute;
+    top: 493px;
+    left: 175px;
+  }
+  .icon3 i{
+    position: absolute;
+    top: 556px;
+    left: 175px;
+  }
+  .icon4 i{
+    position: absolute;
+    top: 613px;
+    left: 175px;
+  }
+  .icon5 i{
+    position: absolute;
+    top: 367px;
+    left: 175px;
+  }
+ .patient-title h1{
+    color: gray;
+ }
+ button{
+    width: 80px;
+    padding:8px 10px ;
+    color: white;
+    background: #e63946;
+    border: none;
+    border-radius: 19px;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+ }
+ button:hover{
+    background:rgb(255, 200, 200) ;
+    color: #e63946;
+ }
+ .para p{
+    font-size: 3rem;
+    color: #e63946;
+    margin-left: 4rem;
+ }
+ .check{
+  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 3rem;
+ }
+ h5{
+  color: gray;
+ }
+ .con1{
+  padding: 2rem;
+  box-shadow: 0 0 20px 0 rgb(0, 0, 0,0.20);
+  border-radius: 0.7rem;
+  background: rgb(249, 254, 255);
+ }
+ .check input{
+  margin-top: 0.4rem;
+  width: 100px;
+  background: rgb(239, 239, 239);
+ }
+ .submit{
+ 
+ }
+ .submit input{
+  text-align: center;
+  background:#e63946 ;
+  margin: 2rem 0 0 12.5rem;
+  color:white ;
+  text-align: center;
+  padding-left: 0.3rem;
+  border-radius: 5px;
+ }
+ .heart img{
+  position: absolute;
+  top: 340px;
+  right: 200px;
+  opacity: 0.6;
+  transform: scale(0.8);
+ animation: beat 4s infinite;
+ }
+ @keyframes beat{
+  0%{
+   transform: scale(0.5);
+  }
+  0%{
+    transform: scale(0.7);
+   }
+ }
+ .pulse img{
+  position: absolute;
+  top: 294px;
+  left: 118px;
+  transform: scale(0.07);
+
+ }
+ .small-heart img{
+  position: absolute;
+  top: 374px;
+  left: 768px;
+  opacity: 0.6;
+  transform: scale(0.1);
+
+ }
+ .cells img{
+  position: absolute;
+  top: 388px;
+  left: 950px;
+  border-radius: 50%;
+  
+  transform: scale(0.1);
+
+ }
